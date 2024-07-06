@@ -34,16 +34,16 @@ hide_console()
 
 '''
 Explanation:
-Windows:
-
+• Windows:
 The script checks if it is already running with pythonw.exe to avoid recursion.
 It uses subprocess.Popen with CREATE_NO_WINDOW to run the script with pythonw.exe.
-macOS and Linux:
 
+• macOS and Linux:
 The script uses os.fork to create a child process.
 The child process becomes a session leader with os.setsid and forks again to detach from the terminal.
 Standard input, output, and error are redirected to /dev/null.
-Usage:
+
+• Usage:
 Save the script as a .py file.
 Run the script using python.exe (Windows) or python (macOS/Linux) initially. The script will handle the rest to hide the console.
 '''
