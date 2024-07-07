@@ -6,6 +6,7 @@ Here’s a simple example to give you an idea of how you might approach this:
 • Obfuscation: Change variable names, add junk code, and use different encryption methods.
 • Packing: Compress or encrypt the script and decrypt it at runtime.
 Here’s a basic implementation of a script mutation logic:
+Anti-Virus Evasion
 '''
 
 import random
